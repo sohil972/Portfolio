@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Sohail Khan — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">&lt;<span>Sohail</span> /&gt;</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Available for freelance &amp; internship</div>
+    <h1 class="hero-name">Muhammad<br><span class="accent">Sohail Khan</span></h1>
+    <div class="hero-typewriter" id="typewriter"><span class="cursor"></span></div>
+    <p class="hero-desc">
+      Frontend &amp; Angular developer building fast, clean web apps. Computer Science student
+      at Gomal University with a 4.0 CGPA — turning ideas into polished digital products.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="mailto:muhammadsohailkhan637@gmail.com" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="section-label">// about me</p>
+      <h2 class="section-title">Passionate <span>Developer</span></h2>
+      <p>I'm a 3rd-year BS Computer Science student at <strong>Gomal University, D.I. Khan</strong>
+         — currently in my 6th semester — maintaining a <strong>4.0/4.0 CGPA</strong> while
+         building real-world full-stack applications.</p>
+      <p>I specialize in <strong>Angular 18</strong> on the frontend and <strong>Laravel 8</strong>
+         on the backend, crafting role-based systems, REST APIs, and production-ready apps.
+         My portfolio spans hospital management systems, food delivery platforms, and student
+         record systems.</p>
+      <p>I believe clean code and thoughtful UX go hand-in-hand. Every project I build is
+         something I'm proud to show.</p>
+      <div class="about-stats">
+        <div class="stat-card"><div class="stat-num">4.0</div><div class="stat-label">CGPA</div></div>
+        <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-card"><div class="stat-num">2027</div><div class="stat-label">Graduation</div></div>
+        <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Years Coding</div></div>
+      </div>
+    </div>
+    <div class="about-img-area reveal reveal-delay-2">
+      <div class="avatar-ring">
+        <div class="avatar-inner">SK</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <p class="section-label reveal">// tech stack</p>
+  <h2 class="section-title reveal">What I <span>Work With</span></h2>
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <p class="section-label reveal">// portfolio</p>
+  <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-inner">
+    <p class="section-label reveal">// let's connect</p>
+    <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+    <p class="contact-desc reveal">
+      Have a project in mind or an opportunity to discuss? I'm open to freelance work,
+      internships, and collaborations. Let's build something great together.
+    </p>
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Full Name</label>
+          <input id="fname" type="text" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input id="femail" type="email" placeholder="your@email.com" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="fsubject">Subject</label>
+        <input id="fsubject" type="text" placeholder="What's this about?" />
+      </div>
+      <div class="form-group">
+        <label for="fmsg">Message</label>
+        <textarea id="fmsg" rows="5" placeholder="Tell me about your project..."></textarea>
+      </div>
+      <div class="form-submit">
+        <button class="btn-primary" onclick="handleSend()">Send Message</button>
+      </div>
+      <div class="form-success" id="formSuccess">✓ Message sent! I'll get back to you soon.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── */-->
+<footer>
+  <p class="footer-copy">© 2026 Muhammad Sohail Khan — Gomal University, D.I. Khan</p>
+  <div class="footer-links">
+    <a href="https://github.com/sohil972" target="_blank">GitHub</a>
+    <a href="mailto:muhammadsohailkhan637@gmail.com">Email</a>
+    <a href="#hero">Back to Top ↑</a>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="main.js"></script>
+
+</body>
+</html>
